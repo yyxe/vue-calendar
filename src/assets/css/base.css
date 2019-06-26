@@ -1,0 +1,230 @@
+@charset "UTF-8";
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  list-style: none;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+body{
+  background: #f2f2f2;
+  line-height: 1;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td
+{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+a,a:hover,a:-webkit-any-link{
+  text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+.attence-box{
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: .7rem;
+}
+
+.gray-font{
+  color: #949494;
+  font-size: .7rem !important;
+}
+
+.font12{
+  font-size: .6rem;
+}
+
+.font14{
+  font-size: .7rem;
+}
+
+.font16{
+  font-size: .8rem;
+}
+
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear{
+  zoom:1;
+}
+.fr{
+  /*float: right;*/
+  flex-direction: row-reverse;
+}
+.fl{
+  /*float: left;*/
+  flex-direction: row;
+}
+
+.nothing{
+  text-align: center;
+  line-height: 13rem;
+  color: #333;
+  letter-spacing: 2px;
+}
+.nowrap{
+  white-space:nowrap;
+}
+.main-content .cube-slide{
+  margin-top: 1rem;
+  height: 10rem !important;
+  overflow: hidden;
+}
+.tabHeader .cube-tab-bar-slider{
+  background-color: #1495EB !important;
+  width: 27px !important;
+  left: 30px;
+  height: 6px;
+  border-radius: 50px;
+  bottom: -6px;
+}
+.index-tab .cube-tab-bar-slider{
+  width: 27px !important;
+  left: 30px;
+}
+.cube-popup-center .cube-popup-content{
+  background: white;
+}
+.hs  .cube-popup-content{
+  border-radius: 10px ;
+  width: 80% !important;
+}
+#share-pop .cube-popup-content{
+  border-radius: 10px ;
+  width: 100% !important;
+}
+.check-type .cube-upload-btn{
+  width: 1rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1rem;
+  margin-top: .5rem;
+  border: none;
+}
+.check-type .cube-upload-btn-def{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+}
+.cube-picker-confirm{
+  color: #1495EB !important;
+}
+.cube-picker-cancel{
+  display: inline-block;
+  padding: 0 2rem !important;
+}
+.cube-upload-file-def > .cubeic-wrong{
+  color: #FF5B29 !important;
+}
+.cube-switch .cube-switch-input:checked + .cube-switch-ui{
+  border-color: #89DC52 !important;
+  background-color: #89DC52 !important;
+}
+.check-all .cube-checkbox_checked .cube-checkbox-ui i{
+  color: #1495EB !important;
+}
+.check-list .cube-radio_selected .cube-radio-ui{
+  background-color: #1495EB !important;
+}
+.parent-header .cube-select-text{
+  font-size: .9rem;
+  color: #1495EB;
+}
+.check-type .cube-select > span{
+  margin-right: .5rem;
+}
+.parent-header .cube-select::after{
+  border: none;
+}
+.cube-picker-wheel-wrapper{
+  z-index: 10000000000;
+}
+.new-notice .cube-popup-content{
+  width: 100% !important;
+  height: 100%;
+}
+.check-type .cube-select{
+  width: 71% !important;
+  text-align: right !important;
+}
+.cube-upload-file-def > .cubeic-wrong{
+  font-size: 14px ;
+  top: -4px !important;
+}
+.cube-upload-file-status.cubeic-right{
+  display: none;
+  color: #FF5B29 !important;
+}
+.teacher-score .cube-rate-item{
+  /*display: none;*/
+}
+.teacher-score .cube-rate-item_active{
+  display: block;
+}
+.cube-upload-file-def{
+  width: 60px !important;
+  height: 60px !important;
+}
+/*.cube-rate-item .cube-rate-item-def{*/
+  /*background-image: url('../../assets/images/xin.png') !important;*/
+/*}*/
+/*.cube-rate-item_active .cube-rate-item-def{*/
+  /*background-image: url('../../assets/images/xin2x.png') !important;*/
+/*}*/
+.cube-select-icon{
+  border-width: 7px 7px 0 7px !important;
+}
+.cube-select > span{
+  margin-right: 1rem;
+}
+.cube-form_standard .cube-textarea-wrapper {
+  padding: 9px 0 !important;
+}
+.cube-form_standard .cube-input input {
+  padding: 8px 0 13px 0 !important;
+}
+.cube-pullup-wrapper{
+  font-size: .65rem;
+  color: #909090;
+}
+.cubeic-wrong{
+  display: block !important;
+}
+.mt05{
+  margin-top: 10px;
+}
+/*.cube-popup-mask{*/
+/*background-color: #3d5fbf !important;*/
+/*opacity: 0.4;*/
+/*pointer-events: auto;*/
+/*height: 1200px !important;*/
+/*}*/
+.cube-form-field{
+  width: 100%;
+}
+.cube-image-preview-counter{
+  display: none;
+}
