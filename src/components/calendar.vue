@@ -99,6 +99,7 @@ export default {
       if (this.currentWeek === 0) {
         this.currentWeek = 0
       }
+      // 111
       const str = this.formatDate(this.currentYear, this.currentMonth, this.currentDay)// 今日日期 年-月-日
       this.days.length = 0
       // 第一天是周日，则第二个循环为 i<= 35- this.currentWeek
