@@ -101,7 +101,7 @@ export default {
       }
       const str = this.formatDate(this.currentYear, this.currentMonth, this.currentDay)// 今日日期 年-月-日
       this.days.length = 0
-      // 今天是周日，放在第一行第7个位置，前面6个 这里默认显示一周，如果需要显示一个月，则第二个循环为 i<= 35- this.currentWeek
+      // 第一天是周日，则第二个循环为 i<= 35- this.currentWeek
       /* eslint-disabled */
       for (let i = this.currentWeek; i > 0; i -= 1) {
         const d = new Date(str)
@@ -128,10 +128,14 @@ export default {
       d.setDate(d.getDate() + 7)
       this.initData(d)
     },
+
+    // 左滑动
     swipeleft () {
       this.activeIndex = -1
       this.weekNext()
     },
+
+    // 右滑动
     swiperight () {
       this.activeIndex = -1
       this.weekPre()
